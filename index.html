@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <!-- CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="index.css">
+        <!-- Google Font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <div class="logo-text">
+                    <h2>FeoDerma</h2>
+                    <h4>health&beauty</h4>
+                </div>
+                <img src="images/feoderma-head-logo-3.png" alt="Feoderma logo">
+            </div>    
+        </header>
+        <main>
+            <section class="items-menu" id="items-menu">
+                
+            </section>
+            <section class="cart" id="cart">
+                <h3 class="cart-title">Cart</h3>
+                <div id="orders-container">
+            
+                </div>
+                <div class="final-price">
+                    <h3>Total price:</h3>
+                    <h4 id="price-sum"></h4>
+                </div>
+                <button class="complete-btn btn" id="complete-btn">Complete order</button> 
+            </section>
+            <section class="complete-order-pop-up" id="complete-order-pop-up">
+                <h3>Enter card details</h3>
+                <form class="complete-order-form" id="complete-order-form">
+                    <input class="form-input" id="name" name="name" type="text" 
+                    placeholder="Enter card holder name" required>
+                    <input class="form-input" id="ccn" name="card details" type="tel" inputmode="numeric"
+                     pattern="[0-9\s]{13,19}" autocomplete="cc-number" 
+                     maxlength="19" placeholder="Enter card number" required>
+                     <input class="form-input" id="cvv" name="cvv" type="tel" inputmode="numeric"
+                     pattern="[0-9\s]{3,3}" autocomplete="cc-number" 
+                     maxlength="3" placeholder="Enter CVV" required>
+                </form>
+                <button class="btn" id="pay-btn" type="submit">Pay</button>
+                <button class="btn" id="cancel-btn">Cancel</button>
+            </section>
+            <section id="finish">
+                <div id="thank-you-container">
+                    <h2 id="thank-you"></h2>
+                </div>    
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
