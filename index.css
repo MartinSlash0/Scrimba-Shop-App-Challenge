@@ -21,6 +21,7 @@ header {
 
 .logo {
     height: 160px;
+    padding: 0 15px;
     margin: 0 auto;
 
     display: flex;
